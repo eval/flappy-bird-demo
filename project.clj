@@ -11,9 +11,20 @@
                  [cljsjs/react "15.3.1-0"] ;; for sablono
                  [sablono "0.7.5"]]
 
+  :profiles
+  {:dev
+   {:dependencies [#_[binaryage/devtools "0.8.2"]
+                   [figwheel-sidecar "0.5.7"]
+                   [com.cemerick/piggieback "0.2.1"]]
+
+    ;;_:plugins      [[lein-figwheel "0.5.8"]
+    ;;               [lein-doo "0.1.7"]]
+    }}
+
   :plugins [[lein-cljsbuild "1.1.4"
              :exclusions [org.clojure/clojure]]
-            [lein-figwheel "0.5.4-7"]]
+            [lein-figwheel "0.5.7"]
+            ]
 
   :clean-targets ^{:protect false} ["resources/public/js/out"
                                     "resources/public/js/flappy_bird_demo.js"

@@ -2,6 +2,8 @@
 
 Read the [blog post](http://rigsomelight.com/2014/05/01/interactive-programming-flappy-bird-clojurescript.html) about this flappy bird demo.
 
+(setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
+
 Watch the 6 minute [video](https://www.youtube.com/watch?v=KZjFVdU8VLI)
 
 Checkout the documentation on [lein-figwheel](https://github.com/bhauman/lein-figwheel) to go further!
